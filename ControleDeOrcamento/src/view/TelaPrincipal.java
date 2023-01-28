@@ -8,11 +8,15 @@ import javax.swing.*;
 
 
 public abstract class TelaPrincipal extends JFrame{
+	public TelaPrincipal() {
+	}
 
 		
 	public static void  main(String[] args) {
 		
-		JFrame pagina = new JFrame("Pagina Inicial");
+		JFrame pagina = new JFrame("Controle de Orçamento");
+		pagina.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				
 		final JLabel labelHome = new JLabel("xablau");
 		JButton buttonCliente = new  JButton("Clientes");
 		JButton buttonEmpresa = new JButton("Epresas");
@@ -75,7 +79,7 @@ public abstract class TelaPrincipal extends JFrame{
 		pagina.pack();
 		
 		pagina.setSize(600, 500);
-		pagina.setLayout(null);
+		pagina.getContentPane().setLayout(null);
 		
 		pagina.setVisible(true);
 		
