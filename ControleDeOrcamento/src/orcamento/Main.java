@@ -10,9 +10,7 @@ public class Main {
 		myObj.setNome("DannDann");
 		myObj.setCpf("12345678");
 		myObj.setEmail("dannyeclissonrodrigo@gmail.com");
-		
-		String [][] array1 = {{"1", "2", "3"},  {myObj.getNome(), myObj.getCpf(), myObj.getEmail()}};
-						
+								
 		Empresa myObj2 = new Empresa(); 
 		myObj2.setRazaoSocial("DD Construeletrica");
 		myObj2.setCnpj("0987654321");
@@ -33,7 +31,5 @@ public class Main {
 	
 	public static void  outputArray(String[][] array) {
 		
-
-		outputArray ( array1 );
 	}
 }
